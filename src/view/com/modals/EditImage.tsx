@@ -177,7 +177,7 @@ export const Component = observer(function ({image, gallery}: Props) {
     windowDimensions.width > 500 ? 410 : windowDimensions.width - 80
   const sideLength = isDesktopWeb ? 300 : computedWidth
 
-  const dimensions = image.getDisplayDimensions(aspectRatio, sideLength)
+  const dimensions = image.getResizedDimensions(aspectRatio, sideLength)
   const imgContainerStyles = {width: sideLength, height: sideLength}
 
   const imgControlStyles = {

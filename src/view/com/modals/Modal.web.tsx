@@ -15,7 +15,6 @@ import * as CreateOrEditMuteListModal from './CreateOrEditMuteList'
 import * as ListAddRemoveUserModal from './ListAddRemoveUser'
 import * as DeleteAccountModal from './DeleteAccount'
 import * as RepostModal from './Repost'
-import * as CropImageModal from './crop-image/CropImage.web'
 import * as AltTextImageModal from './AltImage'
 import * as EditImageModal from './EditImage'
 import * as ChangeHandleModal from './ChangeHandle'
@@ -75,8 +74,6 @@ function Modal({modal}: {modal: ModalIface}) {
     element = <CreateOrEditMuteListModal.Component {...modal} />
   } else if (modal.name === 'list-add-remove-user') {
     element = <ListAddRemoveUserModal.Component {...modal} />
-  } else if (modal.name === 'crop-image') {
-    element = <CropImageModal.Component {...modal} />
   } else if (modal.name === 'delete-account') {
     element = <DeleteAccountModal.Component />
   } else if (modal.name === 'repost') {
